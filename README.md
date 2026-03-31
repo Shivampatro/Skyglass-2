@@ -6,7 +6,7 @@ Skyglass is a modern, minimalist weather application that provides real-time wea
 
 - **Live Weather Updates**: Fetch real-time weather data for any city using the Open-Meteo API.
 - **Dynamic Themes**: The interface background and ambient orbs change based on the current weather condition (Sunny, Rainy, Snowy, Foggy, etc.).
-- **Background Animations**: Smooth, high-performance canvas animations for rain, snow, and thunder.
+- **Background Animations**: Smooth, high-performance canvas animations for rain, snow,thunder and sunny.
 - **Ambient Sound**: Immersive sound effects for rain and thunder to enhance the weather experience.
 - **Location Detection**: Use your browser's geolocation to get instant weather updates for your current position.
 - **Glassmorphism UI**: A sleek, modern design with frosted glass effects and vibrant color accents.
