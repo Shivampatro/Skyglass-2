@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyglass Weather</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="orb" id="orb1"></div>
+<div class="orb" id="orb2"></div>
+
+<canvas id="weatherCanvas"></canvas>
+<div id="weatherOverlay"></div>
+
+<div class="ui">
+  <p class="wordmark">Sky<span>glass</span></p>
+  <p class="tagline">Live weather anywhere</p>
+
+  <div class="card">
+    <div class="input-row">
+      <input id="city" placeholder="City name…" onkeydown="if(event.key==='Enter') getWeather()">
+      <button class="btn btn-primary" onclick="getWeather()">Search</button>
+    </div>
+    <button class="btn btn-secondary" onclick="getMyLocation()">
+      <span>📍</span> Use My Location
+    </button>
+    <div id="result"></div>
+  </div>
+</div>
+
+<!-- Audio -->
+<audio id="rainSound"    loop src="https://www.soundjay.com/nature/rain-01.mp3"></audio>
+<audio id="thunderSound" loop src="https://www.soundjay.com/nature/thunder-01.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
